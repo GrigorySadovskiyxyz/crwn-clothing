@@ -10,6 +10,11 @@ const CollectionItem = ({ id, name, price, imageUrl }) => {
         backgroundImage: `url${imageUrl}`,
       }}
     ></div>
-    <div></div>
+    <div classname="collection-footer">
+      <span classname="name">{name}</span>
+      <span classname="price">{price}</span>
+    </div>
   </div>;
 };
+
+export default CollectionItem;
