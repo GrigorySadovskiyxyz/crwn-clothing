@@ -1,20 +1,20 @@
 import React from "react";
 
-import "./collection-item.syles.scss";
+import "./collection-item.styles.scss";
 
-const CollectionItem = ({ id, name, price, imageUrl }) => {
-  <div classname="collection-item">
+const CollectionItem = ({ id, name, price, imageUrl }) => (
+  <div className="collection-item">
     <div
       className="image"
       style={{
-        backgroundImage: `url${imageUrl}`,
+        backgroundImage: `url(${imageUrl})`,
       }}
-    ></div>
-    <div classname="collection-footer">
-      <span classname="name">{name}</span>
-      <span classname="price">{price}</span>
+    />
+    <div className="collection-footer">
+      <span className="name">{name}</span>
+      <span className="price">{price}</span>
     </div>
-  </div>;
-};
+  </div>
+);
 
 export default CollectionItem;
